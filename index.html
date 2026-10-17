@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Benjamin Martins Kosisochukwu · Petroleum engineering student and aspiring reservoir engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a2a33;--panel:#0f3641;--ink:#eef4f3;--mute:#a7c0c4;--line:#1f4b57;--heat:#ffb43b;--cool:#5fc2e6;--ok:#5fd6a0;--bad:#ff8a80;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;overflow:hidden}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",sans-serif;line-height:1.05;margin:0;letter-spacing:-.025em}
+p{margin:0}
+.deck{display:flex;height:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.deck::-webkit-scrollbar{display:none}
+.s{flex:0 0 100%;height:100%;scroll-snap-align:start;overflow-y:auto;padding:36px 22px 96px}
+.in{max-width:900px;margin:0 auto}
+h2{font-size:clamp(1.7rem,5vw,2.6rem);font-weight:700;margin-bottom:16px}
+.lead{color:var(--mute);max-width:62ch}
+/* intro */
+.intro{position:relative;padding:0;overflow:hidden;color:#f4f1e8;background:radial-gradient(circle at 85% 0%,rgba(255,180,59,.22),transparent 55%),radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px) 0 0/22px 22px,var(--bg)}
+.intro .txt{position:absolute;inset:0 0 46% 0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 96px 26px 24px;max-width:900px}
+.kick{font-weight:600;color:var(--heat);margin-bottom:14px;font-size:.98rem}
+.intro h1{font-size:clamp(2rem,8.5vw,5.4rem);font-weight:800;letter-spacing:-.035em}
+.intro .role{margin-top:16px;font-size:clamp(1rem,3.2vw,1.3rem);color:#cfe3e8;max-width:34ch}
+.intro .goal{margin-top:6px;font-weight:700;color:var(--heat);font-size:clamp(1.05rem,3.4vw,1.4rem)}
+.earth{position:absolute;left:0;right:0;bottom:0;height:46%;display:flex;flex-direction:column;border-top:2px solid rgba(255,255,255,.6)}
+.earth div{position:relative}
+.b1{flex:1.1;background:#123f4b}.b2{flex:1;background:#1b5563}.b3{flex:1.2;background:#6b5a3c}.b4{flex:1.3;background:#b9772a}.b5{flex:1.5;background:#ffb43b}.b6{flex:1;background:#1c6a94}
+.earth span{position:absolute;left:24px;top:50%;transform:translateY(-50%);font-weight:600;font-size:.78rem;color:#dcebee}
+.b5 span{position:absolute;left:24px;top:50%;transform:translateY(-50%);font-weight:700;font-size:.82rem;color:#3a2200}
+.drop{position:absolute;bottom:6px;width:9px;height:9px;border-radius:50%;background:#8a5200;opacity:0;animation:rise 4s ease-in infinite}
+@keyframes rise{0%{transform:translateY(0);opacity:0}20%{opacity:.85}100%{transform:translateY(-130%);opacity:0}}
+.rig{position:absolute;right:7%;bottom:46%;width:56px;z-index:2}.rig svg{display:block;width:56px;height:92px}.rig path{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.3s .2s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.well{position:absolute;right:calc(7% + 26px);top:54%;width:4px;height:0;background:#fff;border-radius:2px;box-shadow:0 0 14px rgba(255,255,255,.6);animation:drill 2.6s 1.2s cubic-bezier(.6,0,.3,1) forwards;z-index:2}
+@keyframes drill{to{height:calc(46% - 30px)}}
+.bar{position:absolute;left:0;bottom:0;height:5px;background:#fff;width:0;z-index:3;animation:fill 6.5s linear .2s forwards}
+@keyframes fill{to{width:100%}}
+.hint{position:absolute;right:20px;top:calc(env(safe-area-inset-top,0px) + 16px);font-size:.85rem;color:#a9c0c8}
+@media (prefers-reduced-motion:reduce){.drop,.bar{animation:none}.well{animation:none;height:calc(46% - 30px)}.rig path{animation:none;stroke-dashoffset:0}}
+.pics{display:grid;gap:12px;grid-template-columns:1fr;margin:18px 0}
+@media(min-width:700px){.pics{grid-template-columns:1fr 1fr}}
+.pics figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.pics svg{width:100%;height:auto;display:block}
+.pics figcaption{font-size:.82rem;color:var(--mute);margin-top:8px}
+/* about */
+.facts{display:grid;gap:12px;margin-top:26px;grid-template-columns:1fr}
+@media(min-width:700px){.facts{grid-template-columns:repeat(3,1fr)}}
+.fact{border-top:3px solid var(--heat);padding-top:10px}
+.fact b{display:block;font:700 1.15rem "Bricolage Grotesque",sans-serif}
+.fact span{color:var(--mute);font-size:.95rem}
+.badge{display:inline-block;margin-top:22px;padding:6px 12px;border:1.5px solid var(--heat);border-radius:99px;font-weight:600;font-size:.92rem;color:var(--heat)}
+/* calc */
+.calc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:18px}
+@media(min-width:820px){.grid{grid-template-columns:5fr 7fr}}
+.ctl{margin-bottom:16px}
+.ctl label{display:flex;justify-content:space-between;font-weight:600;font-size:.97rem;margin-bottom:4px}
+.ctl output{font-variant-numeric:tabular-nums;color:var(--cool)}
+input[type=range]{width:100%;accent-color:var(--heat);height:32px}
+button,.ghost{font:600 .95rem "Public Sans",sans-serif;padding:10px 16px;border-radius:8px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;text-decoration:none;display:inline-block}
+button:hover,.ghost:hover{background:var(--ink);color:var(--bg)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--cool);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.kpi{border:1px solid var(--line);border-radius:10px;padding:10px}
+.kpi small{display:block;color:var(--mute);font-size:.78rem;line-height:1.3}
+.kpi b{display:block;font:800 clamp(1.2rem,4.4vw,1.8rem)/1.15 "Bricolage Grotesque",sans-serif;margin-top:4px;font-variant-numeric:tabular-nums}
+.verdict{margin:12px 0 4px;font-weight:600}
+.pos{color:var(--ok)}.neg{color:var(--bad)}
+svg.ch{width:100%;height:auto;display:block;margin-top:6px}
+.note{font-size:.82rem;color:var(--mute);margin-top:10px;max-width:70ch}
+.cta{display:inline-block;margin:18px 10px 0 0;padding:13px 22px;background:var(--heat);color:#0a2a33;border-radius:9px;font-weight:600;text-decoration:none}
+.cta:hover{filter:brightness(.92)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+/* nav */
+.nav{position:fixed;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);display:flex;justify-content:center;align-items:center;gap:14px;z-index:9;pointer-events:none}
+.nav>*{pointer-events:auto}
+.dots{display:flex;gap:8px;padding:9px 12px;border-radius:99px;background:rgba(15,42,46,.78)}
+.dots button{width:10px;height:10px;padding:0;border-radius:50%;border:0;background:#7f9aa0}
+.dots button[aria-current="true"]{background:#ffc766;width:26px;border-radius:6px}
+.dots button:hover{background:#ffc766}
+.arr{width:40px;height:40px;padding:0;border-radius:50%;background:rgba(15,42,46,.78);border:0;color:#fff;font-size:1.1rem}
+.arr:hover{background:#d9481c;color:#fff}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<section class="s intro" aria-label="Introduction">
+<div class="txt">
+<p class="kick">SPE Energython 2026 · 2nd place, Africa Region</p>
+<h1>Benjamin Martins Kosisochukwu</h1>
+<p class="role">Petroleum engineering student · University of Benin · Year 4</p>
+<p class="goal">Aspiring reservoir engineer</p>
+</div>
+<div class="earth" aria-hidden="true">
+<div class="b1"><span>overburden</span></div><div class="b2"></div><div class="b3"><span>shale seal</span></div><div class="b4"></div><div class="b5"><span>reservoir</span>
+<i class="drop" style="left:28%;animation-delay:1.8s"></i><i class="drop" style="left:46%;animation-delay:2.6s"></i><i class="drop" style="left:62%;animation-delay:3.3s"></i><i class="drop" style="left:80%;animation-delay:2.2s"></i></div><div class="b6"><span>aquifer</span></div>
+</div>
+<div class="rig" aria-hidden="true"><svg viewBox="0 0 56 92"><path d="M8 91 L28 10 L48 91 M28 10 V91 M16 58 H40 M21 38 H35 M12 76 H44 M24 4 H32" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div class="well" aria-hidden="true"></div>
+<div class="bar" aria-hidden="true"></div>
+<p class="hint">Swipe or tap ›</p>
+</section>
+
+<section class="s" aria-label="About me"><div class="in">
+<h2>I want to know what’s underground, and what it’s worth.</h2>
+<p class="lead">I’m a fourth-year petroleum engineering student at the University of Benin. I’m aiming to become a reservoir engineer: the person who works out how much oil and gas a field holds, how fast it can be produced, and whether the project pays back. I learn by building the models myself, from the engineering to the cash flow.</p>
+<div class="facts">
+<div class="fact"><b>Studying</b><span>Petroleum engineering, University of Benin, 400 level</span></div>
+<div class="fact"><b>Aiming at</b><span>Reservoir engineering and field-development economics</span></div>
+<div class="fact"><b>Building</b><span>Techno-economic models and a live transport app</span></div>
+</div>
+<span class="badge">2nd place, SPE Energython 2026, Africa Region · Team Byte &amp; BTU</span>
+</div></section>
+
+<section class="s" aria-label="Energython project"><div class="in">
+<h2>Our 15 MW Lagos data center plant. Test the economics.</h2>
+<p class="lead">Six gas engines power the data center and their waste heat runs the cooling. Drag a slider to see what happens if gas costs more, the customer pays less, or capital gets expensive.</p>
+<div class="pics">
+<figure><svg id="eng" viewBox="0 0 300 120" role="img" aria-label="Illustration of six gas engine-generators in a plant hall"></svg><figcaption>Six 3.3 MW gas engines (Jenbacher J620 class), five running and one on standby. Illustration.</figcaption></figure>
+<figure><svg id="dc" viewBox="0 0 300 120" role="img" aria-label="Illustration of data center server racks"></svg><figcaption>The 15 MW data center hall the plant powers and cools. Illustration.</figcaption></figure>
+</div>
+<div class="calc">
+<div class="grid">
+<div>
+<div class="ctl"><label for="ppa">Power price (PPA) <output id="oppa"></output></label><input id="ppa" type="range" min="0.11" max="0.17" step="0.001" value="0.145"></div>
+<div class="ctl"><label for="gas">Gas price <output id="ogas"></output></label><input id="gas" type="range" min="2.5" max="6" step="0.05" value="3.5"></div>
+<div class="ctl"><label for="cap">Construction cost <output id="ocap"></output></label><input id="cap" type="range" min="40" max="62" step="0.5" value="47.9"></div>
+<div class="ctl"><label for="wacc">Discount rate (WACC) <output id="owacc"></output></label><input id="wacc" type="range" min="10" max="22" step="0.5" value="16"></div>
+<button id="reset" type="button">Reset to base case</button>
+</div>
+<div aria-live="polite">
+<div class="kpis">
+<div class="kpi"><small>Net present value</small><b id="knpv"></b></div>
+<div class="kpi"><small>Project IRR</small><b id="kirr"></b></div>
+<div class="kpi"><small>Payback</small><b id="kpay"></b></div>
+</div>
+<p class="verdict" id="verdict"></p>
+<svg class="ch" id="chart" viewBox="0 0 560 220" role="img" aria-label="Annual free cash flow over 20 years"></svg>
+<p class="note">Bars: yearly free cash flow after tax. Orange line: cumulative cash, crossing zero at payback.</p>
+</div>
+</div>
+<p class="note">Simplified re-computation of our 20-year model. Official base case: NPV $23.1M, IRR 24.36%, 5,000 Monte Carlo runs all positive.</p>
+</div>
+<a class="ghost" style="margin-top:16px" href="https://github.com/Ben-clouddev/SpeEnergython-2026-Byte-BTU" target="_blank" rel="noopener">Read the full model and decks</a>
+</div></section>
+
+<section class="s" aria-label="USRide and UCRide"><div class="in">
+<h2>USRide &amp; UCRide: live on campus.</h2>
+<p class="lead">A ride app for solar tricycles at the University of Benin. Riders book and pay from a wallet, drivers see live demand and daily earnings, and every ride has an SOS alert. Eco-routing groups riders heading the same way to save battery. UCRide brings the same platform to cab drivers, with a daily profit calculator.</p>
+<div class="facts">
+<div class="fact"><b>Live geolocation</b><span>Real-time vehicle positions and booking</span></div>
+<div class="fact"><b>Cashless wallet</b><span>Instant top-up and driver payouts</span></div>
+<div class="fact"><b>Eco-routing</b><span>Shared rides that save battery charge</span></div>
+</div>
+<a class="cta" href="https://usride.vercel.app" target="_blank" rel="noopener">Open the live app</a><a class="ghost" style="margin-top:18px" href="https://github.com/Ben-clouddev/usride/tree/main" target="_blank" rel="noopener">See the code</a>
+</div></section>
+
+<section class="s" aria-label="Contact"><div class="in">
+<h2>Let’s talk.</h2>
+<p class="lead">I’m looking for mentors, internships and teams working on reservoir engineering, energy systems and fintech for Nigeria. The best proof of my work is the code and models below.</p>
+<div class="links">
+<a class="cta" style="margin:0" href="https://www.linkedin.com/in/benjamin-martins-3b4342340" target="_blank" rel="noopener">LinkedIn</a>
+<a class="ghost" href="https://x.com/Benjamin171623" target="_blank" rel="noopener">X (Twitter)</a>
+<a class="ghost" href="https://github.com/Ben-clouddev" target="_blank" rel="noopener">GitHub</a>
+</div>
+<div class="links">
+<a class="ghost" href="https://github.com/Ben-clouddev/SpeEnergython-2026-Byte-BTU" target="_blank" rel="noopener">Energython repo</a>
+<a class="ghost" href="https://github.com/Ben-clouddev/usride/tree/main" target="_blank" rel="noopener">USRide repo</a>
+</div>
+<p class="note" style="margin-top:34px">Benjamin Martins Kosisochukwu · Byte &amp; BTU, SPE Student Chapter · Built in Nigeria</p>
+</div></section>
+</div>
+
+<nav class="nav" aria-label="Slides">
+<button class="arr" id="prev" aria-label="Previous slide">‹</button>
+<div class="dots" id="dots"></div>
+<button class="arr" id="next" aria-label="Next slide">›</button>
+</nav>
+
+<script>
+const REV=[19.629,19.923,20.222,20.525,20.833,21.146,21.463,21.785,22.112,22.443,22.78,23.122,23.469,23.821,24.178,24.541,24.909,25.282,25.661,26.046];
+const OPX=[4.856,4.953,5.051,5.152,5.255,5.361,5.468,5.577,5.689,5.803,5.919,6.037,6.157,6.281,6.406,6.534,6.666,6.799,6.934,7.074];
+const $=id=>document.getElementById(id);
+const F={ppa:v=>"$"+(+v).toFixed(3)+"/kWh",gas:v=>"$"+(+v).toFixed(2)+"/MMBtu",cap:v=>"$"+(+v).toFixed(1)+"M",wacc:v=>(+v).toFixed(1)+"%"};
+const money=v=>(v<0?"−":"")+"$"+Math.abs(v).toFixed(1)+"M";
+function model(ppa,gas,cap,w){
+ const dep=3.145*cap/47.9,f=[];
+ for(let i=0;i<20;i++){const e=REV[i]*ppa/0.145-OPX[i]*(0.649+0.351*gas/3.5),d=i<15?dep:0;f.push(e-0.3*(e-d))}
+ const n=r=>f.reduce((s,x,i)=>s+x/Math.pow(1+r,i+1),-cap);
+ let lo=-.5,hi=1,irr=null;
+ if(n(lo)>0&&n(hi)<0){for(let k=0;k<60;k++){const m=(lo+hi)/2;n(m)>0?lo=m:hi=m}irr=(lo+hi)/2}
+ let c=-cap,pay=null;
+ for(let i=0;i<20;i++){const p=c;c+=f[i];if(pay===null&&c>=0)pay=i+(-p/f[i])}
+ return{f,npv:n(w),irr,pay,cap};
+}
+function draw(r){
+ const W=560,H=220,L=34,B=24,T=10,bw=(W-L-6)/20,cum=[];let c=-r.cap;cum.push(c);r.f.forEach(x=>{c+=x;cum.push(c)});
+ const max=Math.max(...r.f,...cum),min=Math.min(0,...cum),y=v=>T+(H-T-B)*(1-(v-min)/(max-min));
+ let s=`<line x1="${L}" x2="${W}" y1="${y(0)}" y2="${y(0)}" stroke="var(--line)"/>`;
+ [min,max].forEach(t=>s+=`<text x="0" y="${y(t)+4}" font-size="10" fill="var(--mute)">${Math.round(t)}</text>`);
+ r.f.forEach((v,i)=>{const x=L+i*bw+2;s+=`<rect x="${x}" y="${Math.min(y(v),y(0))}" width="${bw-4}" height="${Math.abs(y(v)-y(0))}" fill="var(--cool)" rx="1.5"/>`;
+  if(i%4===3||i===0)s+=`<text x="${x+bw/2-2}" y="${H-6}" font-size="10" fill="var(--mute)" text-anchor="middle">Y${i+1}</text>`});
+ s+=`<polyline fill="none" stroke="var(--heat)" stroke-width="2.5" points="${cum.map((v,i)=>`${(L+i*bw+2).toFixed(1)},${y(v).toFixed(1)}`).join(" ")}"/>`;
+ $("chart").innerHTML=s;
+}
+function run(){
+ const v={ppa:+$("ppa").value,gas:+$("gas").value,cap:+$("cap").value,wacc:+$("wacc").value};
+ for(const k in v)$("o"+k).textContent=F[k](v[k]);
+ const r=model(v.ppa,v.gas,v.cap,v.wacc/100),ok=r.npv>0;
+ $("knpv").textContent=money(r.npv);
+ $("kirr").textContent=r.irr===null?"n/a":(r.irr*100).toFixed(1)+"%";
+ $("kpay").textContent=r.pay===null?"never":r.pay.toFixed(1)+" yrs";
+ $("verdict").className="verdict "+(ok?"pos":"neg");
+ $("verdict").textContent=ok?"Still profitable at a "+v.wacc.toFixed(1)+"% discount rate.":"Value-destroying at these assumptions. Capital would not be approved.";
+ draw(r);
+}
+["ppa","gas","cap","wacc"].forEach(id=>$(id).addEventListener("input",run));
+$("reset").addEventListener("click",()=>{$("ppa").value=.145;$("gas").value=3.5;$("cap").value=47.9;$("wacc").value=16;run()});
+run();
+/* slides */
+const deck=$("deck"),secs=[...deck.querySelectorAll(".s")],dots=$("dots");
+const names=["Intro","About","Energython","USRide","Contact"];
+secs.forEach((_,i)=>{const b=document.createElement("button");b.setAttribute("aria-label",names[i]);b.onclick=()=>go(i);dots.appendChild(b)});
+const idx=()=>Math.round(deck.scrollLeft/deck.clientWidth);
+function go(i){i=Math.max(0,Math.min(secs.length-1,i));deck.scrollTo({left:i*deck.clientWidth,behavior:"smooth"})}
+function mark(){const c=idx();[...dots.children].forEach((b,i)=>b.setAttribute("aria-current",i===c))}
+deck.addEventListener("scroll",mark,{passive:true});mark();
+$("prev").onclick=()=>{stop();go(idx()-1)};$("next").onclick=()=>{stop();go(idx()+1)};
+document.addEventListener("keydown",e=>{if(e.key==="ArrowRight"){stop();go(idx()+1)}if(e.key==="ArrowLeft"){stop();go(idx()-1)}});
+let t=null;const still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function stop(){if(t){clearTimeout(t);t=null;const b=document.querySelector(".bar");if(b)b.style.display="none"}}
+["pointerdown","wheel","touchstart"].forEach(ev=>deck.addEventListener(ev,stop,{passive:true}));
+if(!still)t=setTimeout(()=>{t=null;if(idx()===0)go(1)},6700);
+(function(){
+ let e='<line x1="0" x2="300" y1="104" y2="104" stroke="#1f4b57" stroke-width="2"/>';
+ for(let i=0;i<6;i++){const x=10+i*47,c=i<5?'#1b5563':'#4a6068';
+  e+=`<rect x="${x+14}" y="22" width="9" height="40" rx="2" fill="#3b6f7d"/><rect x="${x}" y="58" width="38" height="46" rx="4" fill="${c}"/><rect x="${x}" y="58" width="38" height="8" rx="3" fill="${i<5?'#ffb43b':'#7f9aa0'}"/><circle cx="${x+19}" cy="86" r="9" fill="#0a2a33" stroke="#5fc2e6" stroke-width="2"/>`}
+ $("eng").innerHTML=e;
+ let d='<line x1="0" x2="300" y1="108" y2="108" stroke="#1f4b57" stroke-width="2"/>';
+ for(let i=0;i<8;i++){const x=12+i*35;d+=`<rect x="${x}" y="14" width="28" height="94" rx="3" fill="#123f4b" stroke="#2c6574"/>`;
+  for(let j=0;j<6;j++)d+=`<rect x="${x+4}" y="${22+j*14}" width="20" height="8" rx="1.5" fill="#0a2a33"/><circle cx="${x+20}" cy="${26+j*14}" r="1.8" fill="${(i+j)%3?'#5fd6a0':'#ffb43b'}"/>`}
+ $("dc").innerHTML=d;
+})();
+</script>
+</body>
+</html>
